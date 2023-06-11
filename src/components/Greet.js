@@ -1,5 +1,10 @@
 import React from "react";
-function Greet(){
-    return <h1>God bye Ibra!</h1>
+function Greet(props){
+    return (
+    <div>
+       <h1>God bye {props.name} and {props.playerName}!</h1>
+        {props.children} 
+    </div>
+    )        
 }
 export default Greet;
