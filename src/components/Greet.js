@@ -1,9 +1,9 @@
 import React from "react";
-function Greet(props){
+const Greet = props =>{
+    const {name, playerName} = props
     return (
     <div>
-       <h1>God bye {props.name} and {props.playerName}!</h1>
-        {props.children} 
+       <h1>God bye {name} and {playerName}!</h1>        
     </div>
     )        
 }
